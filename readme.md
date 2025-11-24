@@ -27,7 +27,7 @@ O processo de comunicação segue o padrão **READY/ACK** para sincronização e
 
 1.  **Conexão:** O Cliente se conecta ao Servidor (via IPv4 ou IPv6).
 2.  **Handshake:** O Cliente envia **"READY"** e o Servidor responde com **"READY ACK"**.
-3.  **Requisição:** O Cliente envia o caminho do diretório desejado (ex: `test_reservoir/test_1`).
+3.  **Requisição:** O Cliente envia o caminho do diretório desejado (ex: `test_bank/test_1`).
 4.  **Transferência:** O Servidor lista os arquivos e envia os nomes, concatenados com um terminador.
 5.  **Medição:** O Cliente mede o tempo gasto desde o envio da requisição até o recebimento do último byte.
 6.  **Encerramento:** O Cliente envia **"bye"** e fecha a conexão.
@@ -82,5 +82,6 @@ Execute o servidor em uma janela e o teste na outra.
 | `create_tests.py` | Gera os diretórios de teste, garantindo o tamanho exato de $2^i$ bytes no *payload* transferido. |
 | `plot.py` | Código para gerar o gráfico final de Throughput. |
 | `Makefile` | Script de automação para gerenciar o projeto. |
+
 
 É importante comentar que os arquivos referentes ao diretórios de teste e resultados da execução de client.py não puderam ser adicionados devido ao tamanho dos nomes destes. No entanto, eles são automaticamente gerados durante a execução dos códigos. Com a ressalva de que é necessário criar manualmente o diretório 'test_0' - completamente vazio -, para que a execução siga exatamente os mesmos elementos que a original.
