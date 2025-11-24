@@ -78,10 +78,11 @@ Execute o servidor em uma janela e o teste na outra.
 | :--- | :--- |
 | `server.py` | Implementação do servidor TCP Dual-Stack. |
 | `client.py` | Implementação do cliente TCP, lógica do protocolo e cálculo do tempo. |
-| `run_tests.py` | Automatiza 320 execuções, coleta o tempo bruto e calcula as estatísticas. |
+| `run_tests.py` | Automatiza 340 execuções, coleta o tempo bruto e calcula as estatísticas. |
 | `create_tests.py` | Gera os diretórios de teste, garantindo o tamanho exato de $2^i$ bytes no *payload* transferido. |
 | `plot.py` | Código para gerar o gráfico final de Throughput. |
 | `Makefile` | Script de automação para gerenciar o projeto. |
 
 
 É importante comentar que os arquivos referentes ao diretórios de teste e resultados da execução de client.py não puderam ser adicionados devido ao tamanho dos nomes destes. No entanto, eles são automaticamente gerados durante a execução dos códigos. Com a ressalva de que é necessário criar manualmente o diretório 'test_0' - completamente vazio -, para que a execução siga exatamente os mesmos elementos que a original.
+
